@@ -52,7 +52,7 @@ const ContactForm = () => {
                   </div>
                   <button
                     type='submit'
-                    className='text-secondary bg-LightApricot hover:bg-secondary focus:ring-4 hover:text-white focus:outline-hidden focus:ring-blue-300 font-normal rounded-lg text-base w-full px-5 py-2.5 text-center  transition-all duration-0.4s'>
+                    className='text-primary bg-white hover:bg-secondary focus:ring-4 hover:text-white focus:outline-hidden focus:ring-blue-300 font-normal rounded-lg text-base w-full px-5 py-2.5 text-center  transition-all duration-0.4s'>
                     Get in touch
                   </button>
                 </form>

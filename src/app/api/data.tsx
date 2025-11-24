@@ -33,7 +33,7 @@ export const cardData = [
       link: '/',
     },
     {
-      iconUrl: getImgPath('/images/build-amazing/beautiful-design.svg'),
+      iconUrl: getImgPath('/images/build-amazing/custom-solutions.svg'),
       title: 'Custom Solutions',
       description: 'We tailor our subtitling services to meet your specific needs.',
       link: '/',

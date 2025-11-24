@@ -20,27 +20,27 @@ const ContactInfo = () => {
                   <p className="mb-10">With <span className="font-bold">CaptionCore</span>, you’re not just expanding your reach, you’re building connections.</p>
                   <div className="grid md:grid-cols-3 grid-cols-1 gap-7 mt-8">
                     {/* Email */}
-                    <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" className="flex flex-col items-center bg-primary/10 dark:bg-darklight rounded-14 p-8 shadow-light_shadwo dark:shadow-darkmd">
+                    <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" className="flex flex-col items-center bg-secondary dark:bg-secondary rounded-14 p-8 shadow-light_shadwo dark:shadow-darkmd">
                       {/* Puedes reemplazar este div por un icono de email */}
-                      <div className="bg-primary/20 dark:bg-darklight w-14 h-14 flex items-center justify-center rounded-full mb-4">
+                      <div className="bg-primary/20 dark:bg-darkmode w-14 h-14 flex items-center justify-center rounded-full mb-4">
                         <i className="bg-no-repeat bg-contain w-8 h-8 inline-block" style={{backgroundImage: `url(${getImgPath('/images/contact/email.svg')})`}}></i>
                       </div>
                       <span className="text-lg font-semibold text-secondary dark:text-white mb-2">Email</span>
                       <span className="text-base text-SlateBlue dark:text-darktext whitespace-nowrap">contact@captioncore.com</span>
                     </div>
                     {/* Linkedin */}
-                    <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" className="flex flex-col items-center bg-primary/10 dark:bg-darklight rounded-14 p-8 shadow-light_shadwo dark:shadow-darkmd">
-                      {/* Placeholder para icono de Linkedin */}
-                      <div className="bg-primary/20 dark:bg-darklight w-14 h-14 flex items-center justify-center rounded-full mb-4">
-                        <span className="w-8 h-8 inline-block flex items-center justify-center text-2xl font-bold text-primary dark:text-white">in</span>
+                    <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" className="flex flex-col items-center bg-secondary dark:bg-secondary rounded-14 p-8 shadow-light_shadwo dark:shadow-darkmd">
+                      {/* Icono Linkedin perfectamente centrado */}
+                      <div className="bg-primary/20 dark:bg-darkmode w-14 h-14 flex items-center justify-center rounded-full mb-4">
+                        <span className="flex items-center justify-center w-8 h-8 text-2xl font-bold text-primary dark:text-white">in</span>
                       </div>
                       <span className="text-lg font-semibold text-secondary dark:text-white mb-2">Linkedin</span>
                       <span className="text-base text-SlateBlue dark:text-darktext break-all">CaptionCore</span>
                     </div>
                     {/* Phone */}
-                    <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" className="flex flex-col items-center bg-primary/10 dark:bg-darklight rounded-14 p-8 shadow-light_shadwo dark:shadow-darkmd">
+                    <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" className="flex flex-col items-center bg-secondary dark:bg-secondary rounded-14 p-8 shadow-light_shadwo dark:shadow-darkmd">
                       {/* Placeholder para icono de teléfono */}
-                      <div className="bg-primary/20 dark:bg-darklight w-14 h-14 flex items-center justify-center rounded-full mb-4">
+                      <div className="bg-primary/20 dark:bg-darkmode w-14 h-14 flex items-center justify-center rounded-full mb-4">
                         <span className="w-8 h-8 inline-block flex items-center justify-center text-2xl font-bold text-green-500">📞</span>
                       </div>
                       <span className="text-lg font-semibold text-secondary dark:text-white mb-2">Phone</span>
