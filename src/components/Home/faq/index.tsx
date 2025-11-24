@@ -79,7 +79,7 @@ const FaqQuestion = () => {
                   </p>
                   <Link
                     href='/'
-                    className='text-primary dark:text-darkprimary text-base font-normal hover:text-black dark:hover:text-LightApricot'>
+                    className='text-primary dark:text-primary text-base font-normal hover:text-black dark:hover:text-LightApricot'>
                     Ask us via email
                   </Link>
                 </div>
