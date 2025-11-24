@@ -7,122 +7,53 @@ const ContactInfo = () => {
     <>
       <section className="dark:bg-darkmode py-20">
         <div className="container">
-          <div className="flex md:flex-row flex-col items-stretch justify-start sm:gap-28 gap-8">
-            <div className="flex sm:flex-row flex-col items-start sm:gap-8 gap-4">
-              <div className="bg-primary/20 dark:bg-darklight w-14 h-14 flex items-center justify-center rounded-full">
-                <i
-                  className="bg-no-repeat bg-contain w-8 h-8 inline-block"
-                  style={{
-                    backgroundImage: `url(${getImgPath(
-                      "/images/contact/email.svg"
-                    )})`,
-                  }}
-                ></i>
-              </div>
-              <div>
-                <span className="text-secondary dark:text-white text-xl font-bold">
-                  Email Us
-                </span>
-                <p className="text-SlateBlue font-normal text-xl max-w-334 pt-3 pb-7 dark:text-darktext">
-                  Please feel free to drop us a line. We will respond as soon as
-                  possible.
-                </p>
-                <div>
-                  <Link
-                    href="#"
-                    className="text-primary text-lg font-medium flex items-center gap-3 group hover:text-secondary dark:hover:text-white"
-                  >
-                    Leave a message
-                    <i
-                      className="bg-no-repeat bg-contain inline-block w-6 h-4"
-                      style={{
-                        backgroundImage: `url(${getImgPath(
-                          "/images/contact/arrow.svg"
-                        )})`,
-                      }}
-                      onMouseEnter={(e) => {
-                        const isDark =
-                          document.documentElement.classList.contains("dark");
-                        const hoverImage = isDark
-                          ? getImgPath("/images/contact/arrow-hover-white.svg")
-                          : getImgPath("/images/contact/arrow-hover.svg");
-                        e.currentTarget.style.backgroundImage = `url(${hoverImage})`;
-                      }}
-                      onMouseLeave={(e) => {
-                        e.currentTarget.style.backgroundImage = `url(${getImgPath(
-                          "/images/contact/arrow.svg"
-                        )})`;
-                      }}
-                    ></i>
-                  </Link>
+          <div className="flex md:flex-row flex-col items-center justify-center sm:gap-28 gap-8">
+            <div className="flex sm:flex-row flex-col items-center sm:gap-8 gap-4">
+              {/* Icono de correo eliminado */}
+              <div className="mx-4 md:mx-20 my-6">
+                {/* Título 'Email Us' eliminado para un diseño más limpio */}
+                <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" className="text-SlateBlue font-normal text-xl max-w-4xl pb-10 px-4 md:px-12 dark:text-darktext">
+                  <p className="mb-5">At <span className="font-bold">CaptionCore</span>, we believe every creator deserves to have their voice heard across the world. We provide professional, human translations that capture not just words, but the tone, style, and personality of your content.</p>
+                  <p className="mb-5">As a passionate, creator-focused team, we know how powerful it is to enjoy a video with accurate, natural subtitles. That’s why we’re here, to help you share your message with a global audience in the most authentic way possible.</p>
+                  <p className="mb-5">Whether you’re looking to subtitle YouTube videos, localize a podcast, or adapt your content for international platforms, we’ve got you covered.</p>
+                  <p className="mb-5">Reach out to us through email or via the form above, and let’s talk about how we can bring your content to more people, more languages, and more hearts.</p>
+                  <p className="mb-10">With <span className="font-bold">CaptionCore</span>, you’re not just expanding your reach, you’re building connections.</p>
+                  <div className="grid md:grid-cols-3 grid-cols-1 gap-7 mt-8">
+                    {/* Email */}
+                    <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" className="flex flex-col items-center bg-primary/10 dark:bg-darklight rounded-14 p-8 shadow-light_shadwo dark:shadow-darkmd">
+                      {/* Puedes reemplazar este div por un icono de email */}
+                      <div className="bg-primary/20 dark:bg-darklight w-14 h-14 flex items-center justify-center rounded-full mb-4">
+                        <i className="bg-no-repeat bg-contain w-8 h-8 inline-block" style={{backgroundImage: `url(${getImgPath('/images/contact/email.svg')})`}}></i>
+                      </div>
+                      <span className="text-lg font-semibold text-secondary dark:text-white mb-2">Email</span>
+                      <span className="text-base text-SlateBlue dark:text-darktext whitespace-nowrap">contact@captioncore.com</span>
+                    </div>
+                    {/* Linkedin */}
+                    <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" className="flex flex-col items-center bg-primary/10 dark:bg-darklight rounded-14 p-8 shadow-light_shadwo dark:shadow-darkmd">
+                      {/* Placeholder para icono de Linkedin */}
+                      <div className="bg-primary/20 dark:bg-darklight w-14 h-14 flex items-center justify-center rounded-full mb-4">
+                        <span className="w-8 h-8 inline-block flex items-center justify-center text-2xl font-bold text-primary dark:text-white">in</span>
+                      </div>
+                      <span className="text-lg font-semibold text-secondary dark:text-white mb-2">Linkedin</span>
+                      <span className="text-base text-SlateBlue dark:text-darktext break-all">CaptionCore</span>
+                    </div>
+                    {/* Phone */}
+                    <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" className="flex flex-col items-center bg-primary/10 dark:bg-darklight rounded-14 p-8 shadow-light_shadwo dark:shadow-darkmd">
+                      {/* Placeholder para icono de teléfono */}
+                      <div className="bg-primary/20 dark:bg-darklight w-14 h-14 flex items-center justify-center rounded-full mb-4">
+                        <span className="w-8 h-8 inline-block flex items-center justify-center text-2xl font-bold text-green-500">📞</span>
+                      </div>
+                      <span className="text-lg font-semibold text-secondary dark:text-white mb-2">Phone</span>
+                      <span className="text-base text-SlateBlue dark:text-darktext break-all">+34 650 258 088</span>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div className="flex sm:flex-row flex-col items-start sm:gap-8 gap-4">
-              <div className="bg-primary/20 dark:bg-darklight w-14 h-14 flex items-center justify-center rounded-full">
-                <i
-                  className="bg-no-repeat bg-contain w-8 h-8 inline-block"
-                  style={{
-                    backgroundImage: `url(${getImgPath(
-                      "/images/contact/Career.svg"
-                    )})`,
-                  }}
-                ></i>
-              </div>
-              <div className="flex flex-col h-full justify-between">
-                <div className="">
-                  <span className="text-secondary dark:text-white text-xl font-bold">
-                    Careers
-                  </span>
-                  <p className="text-SlateBlue font-normal text-xl max-w-334 pt-3 pb-7 dark:text-darktext">
-                    Sit ac ipsum leo lorem magna nunc mattis maecenas non
-                    vestibulum
-                  </p>
-                </div>
-                <div>
-                  <Link
-                    href="#"
-                    className="text-primary text-lg font-medium flex items-center gap-3 group hover:text-secondary dark:hover:text-white"
-                  >
-                    Send an application
-                    <i
-                      className="bg-no-repeat bg-contain inline-block w-6 h-4"
-                      style={{
-                        backgroundImage: `url(${getImgPath(
-                          "/images/contact/arrow.svg"
-                        )})`,
-                      }}
-                      onMouseEnter={(e) => {
-                        const isDark =
-                          document.documentElement.classList.contains("dark");
-                        const hoverImage = isDark
-                          ? getImgPath("/images/contact/arrow-hover-white.svg")
-                          : getImgPath("/images/contact/arrow-hover.svg");
-                        e.currentTarget.style.backgroundImage = `url(${hoverImage})`;
-                      }}
-                      onMouseLeave={(e) => {
-                        e.currentTarget.style.backgroundImage = `url(${getImgPath(
-                          "/images/contact/arrow.svg"
-                        )})`;
-                      }}
-                    ></i>
-                  </Link>
-                </div>
+                {/* Botón 'Leave a message' eliminado */}
               </div>
             </div>
           </div>
-          <div className="md:pt-32 pt-11 md:pb-28 pb-8">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d938779.7831767448!2d71.05098621661072!3d23.20271516446136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e82dd003ff749%3A0x359e803f537cea25!2sGANESH%20GLORY%2C%20Gota%2C%20Ahmedabad%2C%20Gujarat%20382481!5e0!3m2!1sen!2sin!4v1715676641521!5m2!1sen!2sin"
-              width="1114"
-              height="477"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              className="rounded-lg w-full"
-            ></iframe>
-          </div>
+          {/* Mapa eliminado */}
         </div>
-        <div className="border-b border-solid border-BorderLine dark:border-dark_border"></div>
       </section>
     </>
   );

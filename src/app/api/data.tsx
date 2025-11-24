@@ -3,44 +3,39 @@ import { getImgPath } from '@/utils/imagePath';
 export const count = [
     {
         icon: getImgPath("/images/counter/star.svg"),
-        value: "4.86",
-        description: "Out of 5 stars from 3896 reviews on google platform",
+        value: "Captioning",
+        description: "Make your content accessible with accurate captions",
     },
     {
         icon: getImgPath("/images/counter/admin.svg"),
-        value: "364",
-        description: "Client testimonials received in the year 2021",
-    },
-    {
-        icon: getImgPath("/images/counter/bag.svg"),
-        value: "45M+",
-        description: "Revenue generated through new projects & marketing",
+        value: "Multilingual Subtitling",
+        description: "Reach a global audience with subtitles in multiple languages",
     },
 ];
 
 export const cardData = [
     {
       iconUrl: getImgPath('/images/build-amazing/beautiful-design.svg'),
-      title: 'Beautiful designs premade',
-      description: 'Lorem ipsum dolor sit amet, consect etur adipiscing',
+      title: 'Professional Quality',
+      description: 'Our team of experienced linguists ensures accurate and engaging subtitles.',
+      link: '/',
+    },
+{
+      iconUrl: getImgPath('/images/build-amazing/amazing.svg'),
+      title: 'Transparent Pricing',
+      description: 'Our pricing is clear and upfront, with no hidden fees.',
       link: '/',
     },
     {
       iconUrl: getImgPath('/images/build-amazing/coded.svg'),
-      title: 'Coded with much care & notes',
-      description: 'Lorem ipsum dolor sit amet, consect etur adipiscing',
-      link: '/',
-    },
-    {
-      iconUrl: getImgPath('/images/build-amazing/amazing.svg'),
-      title: 'Amazing demos included',
-      description: 'Lorem ipsum dolor sit amet, consect etur adipiscing',
+      title: 'Fast\nDelivery',
+      description: 'We deliver your subtitles quickly, so you can reach your audience sooner.',
       link: '/',
     },
     {
       iconUrl: getImgPath('/images/build-amazing/beautiful-design.svg'),
-      title: 'Beautiful designs premade',
-      description: 'Lorem ipsum dolor sit amet, consect etur adipiscing',
+      title: 'Custom Solutions',
+      description: 'We tailor our subtitling services to meet your specific needs.',
       link: '/',
     },
   ];
@@ -80,51 +75,37 @@ export const cardData = [
 
  export const accordionData = [
     {
-      title: "How do I figure out what to learn?",
+      title: "How do I order subtitling services?",
       content:
-        "The most important thing is that you want to learn something that interests you, because once you start learning, you’ll be with this topic for a while. Choosing something just because it’s popular or what others are doing isn’t the way to go because if you don’t have a true interest in it, you’ll lose the motivation to learn! Spend some time seriously looking into the different tech career paths before choosing one to go down.",
+        "If you are interested in our subtitling services, just fill in our provided form or contact us via email. Provide a brief of what you would like and we will answer as soon as we can.",
     },
     {
-      title: "Which programming language is the best to learn?",
+      title: "What languages does your company work in?",
       content:
-        "I usually tell most people to start by learning HTML and CSS, then move into learning JavaScript. The reason is that JavaScript is used everywhere: frontend, backend, and even to build mobile apps. It has many use cases, which is why I think it’s smart to learn.",
+        "We work with a wide range of languages to provide accurate and culturally relevant subtitles. We specialize in subtitles fro English and Spanish, but if you have a specific language in mind, feel free to ask us!",
     },
     {
-      title: "Is it possible to do both graphic design and coding?",
+      title: "Do you use Machine Translation (MT)?",
       content:
-        "If you have an interest in coding and graphic design, then there’s nothing to say you shouldn’t learn skills in both areas. They often work hand-in-hand, so having knowledge and skills in both areas could be desirable for certain career paths. You could also think about pursuing something in between like UI design, which is a very in-demand career right now!",
+        "We use human and/or MT. Whichever model is used, all content is post-edited and QC'd by human professional translators. Andovar's view is that MT does not replace translators; rather, it helps them to be more efficient. We work with a state-of-the-art platform with built-in machine translation engines specifically trained for broadcast media content. In addition to automating the translation, our platform has terminology management tools, as well as inbuilt real-time QC checks that ensure reading speeds are respected, as well as flagging character and line limit violations.",
     },
     {
-      title: "Should I learn Python 2 or Python 3?",
+      title: "What files do you provide?",
       content:
-        "Now, in 2020, it’s a no-brainer: Python 3 is definitely the way to go. There are still some situations where picking up Python 2 might be advantageous, or you may just want to learn a little of the history and the differences between Python 2 and 3 for curiosity’s sake, but job-wise, Python 3 is the clear winner.",
-    },
-    {
-      title: "Should I learn skills in several areas?",
-      content:
-        "Personally, I’d say choose a path and stick to it! Learning too many things at once will slow you down. Here are a few ideas of things you can choose to focus on, and a little bit about each one.",
+        "We provide subtitles in various file formats to suit your needs, including SRT, VTT, and more. If you have a specific format requirement, please let us know and we will do our best to accommodate it.",
     },
   ];
 
   export const sections = {
     features: [
-      { name: 'Online Payments', href: '/' },
-      { name: 'Financial Projections', href: '/' },
-      { name: 'Bookkeeping', href: '/' },
-      { name: 'Banking', href: '/' },
+      { name: 'A video subtitling company.', href: '/' },
     ],
     resources: [
-      { name: 'Documentation', href: '/' },
-      { name: 'Integrations', href: '/' },
-      { name: 'API Reference', href: '/' },
-      { name: 'Support', href: '/' },
-      { name: 'Help', href: '/' },
+      { name: 'Home', href: '/' },
+      { name: 'About', href: '/' },
+      { name: 'Contact', href: '/' },
     ],
     platform: [
-      { name: 'Infrastructure', href: '/' },
-      { name: 'Certifications', href: '/' },
-      { name: 'Licenses', href: '/' },
-      { name: 'Terms and conditions', href: '/' },
-      { name: 'Legal', href: '/' },
+      { name: 'contact@captioncore.com', href: '/' },
     ],
   };

@@ -6,8 +6,10 @@ import 'aos/dist/aos.css';
 const Aoscompo = ({children}:any) => {
     useEffect(() => {
         AOS.init({
-            duration: 800,
-            once: false,
+              duration: 800,
+              once: false,
+              offset: 30,
+              // anchorPlacement: 'top-bottom',
         })
     }, [])
   return (

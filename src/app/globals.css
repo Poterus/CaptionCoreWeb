@@ -13,8 +13,8 @@
 */
 
 @theme {
-  --color-primary: #1358d8;
-  --color-darkprimary: #054ac8;
+  --color-primary: #AB5903;
+  --color-darkprimary: #732000;
   --color-lightPrimary: #3187f4;
   --color-secondary: #102c46;
   --color-SlateBlue: #547593;
@@ -24,7 +24,7 @@
   --color-BorderLine: #ccd7e1;
   --color-darkmode: #021526;
   --color-darklight: #061b2e;
-  --color-darktext: #7f8487;
+  --color-darktext: #CFCFCF;
   --color-dark_border: #224767;
   --color-Cream: #eee8a9;
   --color-LavenderBlue: #dbe7ff;
@@ -81,6 +81,10 @@
   ::backdrop,
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
+  }
+
+  p {
+    margin-bottom: 1.5rem;
   }
 }
 

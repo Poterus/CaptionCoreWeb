@@ -80,7 +80,7 @@ const FaqQuestion = () => {
                   <Link
                     href='/'
                     className='text-primary dark:text-darkprimary text-base font-normal hover:text-black dark:hover:text-LightApricot'>
-                    Contact our support team
+                    Ask us via email
                   </Link>
                 </div>
               </div>

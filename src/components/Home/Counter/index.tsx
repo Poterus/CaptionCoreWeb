@@ -11,7 +11,7 @@ const Counter = () => {
   return (
     <section className={`dark:bg-darkmode py-20`}>
       <div className='container'>
-        <div className='flex flex-wrap items-center md:justify-between justify-center md:gap-0 gap-9'>
+        <div className='flex flex-wrap items-center md:justify-center justify-center md:gap-20 gap-9'>
           {count.map((item, index) => (
             <div
               key={index}

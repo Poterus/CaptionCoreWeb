@@ -18,7 +18,7 @@ export const ColorConfiguration = () => {
                         <span>--color-BorderLine: #ccd7e1;</span>
                         <span>--color-darkmode: #021526;</span>
                         <span>--color-darklight: #061b2e;</span>
-                        <span>--color-darktext: #7f8487;</span>
+                        <span>--color-darktext: #ffffffff;</span>
                         <span>--color-dark_border: #224767;</span>
                         <span>--color-Cream: #eee8a9;</span>
                         <span>--color-LavenderBlue: #dbe7ff;</span>
