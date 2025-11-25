@@ -20,8 +20,8 @@ const Footer: FC = () => {
 
   return (
     <footer
-      className={`relative dark:bg-darkmode bg-cover bg-no-repeat w-full h-full pt-32`}
-      style={{ backgroundImage: `url(${bgImagePath})` }}
+      className={`relative dark:bg-darkmode bg-cover bg-no-repeat bg-center w-full h-full pt-32`}
+      style={{ backgroundImage: `url(${bgImagePath})`, backgroundPosition: 'center top' }}
     >
       <div className="bg-secondary md:pb-20 pb-8">
         <div className="container">

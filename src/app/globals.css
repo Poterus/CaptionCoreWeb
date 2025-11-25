@@ -17,7 +17,7 @@
   --color-darkprimary: #732000;
   --color-lightPrimary: #3187f4;
   --color-secondary: #171717;
-  --color-SlateBlue: #547593;
+  --color-SlateBlue: #939596;
   --color-AliceBlue: #f3f9fd;
   --color-LightApricot: #f9c78f;
   --color-border: #233d55;
@@ -105,7 +105,7 @@
   }
 
   .btn {
-    @apply bg-primary text-white py-3 px-8 rounded-lg hover:bg-secondary cursor-pointer transition-all duration-[0.4s] inline-block;
+    @apply bg-primary text-white py-3 px-8 rounded-lg hover:bg-darkprimary cursor-pointer transition-all duration-[0.4s] inline-block;
   }
 }
 

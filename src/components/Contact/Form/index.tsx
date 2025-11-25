@@ -7,10 +7,10 @@ const ContactForm = () => {
   return (
     <>
       <section className='dark:bg-darkmode pt-0 md:pb-24 pb-10'>
-        <div className='container'>
+        <div className='container px-2 sm:px-4'>
           <div className='grid lg:grid-cols-12 grid-cols-1 md:gap-20 gap-10'>
             <div data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" className='md:col-span-6 col-span-1'>
-              <h2 className='max-w-277 sm:text-[40px] sm:leading-[3rem] text-[28px] leading-[2.25rem] font-bold text-secondary dark:text-white mb-9'>
+              <h2 className='max-w-320 sm:text-[40px] sm:leading-[3rem] text-[28px] leading-[2.25rem] font-bold text-secondary dark:text-white mb-9'>
                 Do you want subtitles in your content?
               </h2>
               <form>
@@ -52,20 +52,21 @@ const ContactForm = () => {
                   </div>
                   <button
                     type='submit'
-                    className='text-primary bg-white hover:bg-secondary focus:ring-4 hover:text-white focus:outline-hidden focus:ring-blue-300 font-normal rounded-lg text-base w-full px-5 py-2.5 text-center  transition-all duration-0.4s'>
+                    className='bg-primary text-white font-normal rounded-lg text-base w-full px-5 py-2.5 text-center transition-all duration-300 hover:bg-darkprimary focus:outline-none'>
                     Get in touch
                   </button>
                 </form>
             </div>
             <div data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000" className='sm:col-span-6 col-span-1'>
               <Image
-                src={getImgPath('/images/contact/contact.jpg')}
+                src={getImgPath('/images/contact/contact.png')}
                 alt='Contact'
-                width={0}
-                height={0}
+                width={526}
+                height={650}
                 quality={100}
-                sizes='100vh'
-                className='bg-no-repeat bg-contain rounded-lg w-526 h-650'
+                sizes='(max-width: 768px) 100vw, 526px'
+                className='bg-no-repeat bg-contain rounded-lg w-full h-auto max-w-[526px] mx-auto'
+                style={{ objectFit: 'contain' }}
               />
             </div>
           </div>

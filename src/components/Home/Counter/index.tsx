@@ -26,7 +26,7 @@ const Counter = () => {
                 height={60}
                 unoptimized
               />
-              <span className='text-5xl font-bold text-secondary dark:text-white'>
+              <span className='text-5xl font-bold text-secondary dark:text-white text-center w-full'>
                 {item.value}
               </span>
               <p className='text-20 text-SlateBlue font-normal text-center max-w-72 w-full dark:text-darktext'>
