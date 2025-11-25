@@ -105,7 +105,7 @@
   }
 
   .btn {
-    @apply bg-primary text-white py-3 px-8 rounded-lg hover:bg-darkprimary cursor-pointer transition-all duration-[0.4s] inline-block;
+    @apply bg-primary text-white py-3 px-8 rounded-lg hover:bg-secondary cursor-pointer transition-all duration-[0.4s] inline-block;
   }
 }
 
