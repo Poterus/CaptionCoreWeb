@@ -21,11 +21,17 @@ const ContactInfo = () => {
                   <div className="grid md:grid-cols-3 grid-cols-1 gap-7 mt-8">
                     {/* Email */}
                     <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" className="flex flex-col items-center bg-secondary dark:bg-secondary rounded-14 p-8 shadow-light_shadwo dark:shadow-darkmd">
-                      {/* Puedes reemplazar este div por un icono de email */}
+                      {/* Icono de email */}
                       <div className="bg-primary/20 dark:bg-darkmode w-14 h-14 flex items-center justify-center rounded-full mb-4">
                         <i className="bg-no-repeat bg-contain w-8 h-8 inline-block" style={{backgroundImage: `url(${getImgPath('/images/contact/email.svg')})`}}></i>
                       </div>
-                      <span className="text-lg font-semibold text-secondary dark:text-white mb-2">Email</span>
+                      <a
+                        href="mailto:contact@captioncore.com"
+                        aria-label="Send email to contact@captioncore.com"
+                        className="text-lg font-semibold text-secondary dark:text-white mb-2 hover:underline focus:underline outline-none"
+                      >
+                        Email
+                      </a>
                       <span className="text-base text-SlateBlue dark:text-darktext whitespace-nowrap">contact@captioncore.com</span>
                     </div>
                     {/* Linkedin */}
@@ -34,7 +40,15 @@ const ContactInfo = () => {
                       <div className="bg-primary/20 dark:bg-darkmode w-14 h-14 flex items-center justify-center rounded-full mb-4">
                         <span className="flex items-center justify-center w-8 h-8 text-2xl font-bold text-primary dark:text-white">in</span>
                       </div>
-                      <span className="text-lg font-semibold text-secondary dark:text-white mb-2">Linkedin</span>
+                      <a
+                        href="https://www.linkedin.com/company/captioncore/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Visit CaptionCore on LinkedIn"
+                        className="text-lg font-semibold text-secondary dark:text-white mb-2 hover:underline focus:underline outline-none"
+                      >
+                        Linkedin
+                      </a>
                       <span className="text-base text-SlateBlue dark:text-darktext break-all">CaptionCore</span>
                     </div>
                     {/* Phone */}

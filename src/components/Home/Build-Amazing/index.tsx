@@ -85,9 +85,9 @@ const BuildAmazing = ({ isSpace }: { isSpace: boolean }) => {
                 </div>
               </div>
               <div className='mt-8'>
-                <Link href='/' className='btn inline-flex items-center gap-3'>
+                <Link href='/contact' className='btn inline-flex items-center gap-3'>
                   Get Started
-                  </Link>
+                </Link>
               </div>
             </div>
             <div className='grid md:grid-cols-2 grid-cols-1 gap-7'>

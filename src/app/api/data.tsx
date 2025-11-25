@@ -102,10 +102,10 @@ export const cardData = [
     ],
     resources: [
       { name: 'Home', href: '/' },
-      { name: 'About', href: '/' },
-      { name: 'Contact', href: '/' },
+      { name: 'About', href: '/about' },
+      { name: 'Contact', href: '/contact' },
     ],
     platform: [
-      { name: 'contact@captioncore.com', href: '/' },
+      { name: 'contact@captioncore.com', href: 'mailto:contact@captioncore.com' },
     ],
   };

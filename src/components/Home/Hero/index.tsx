@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { getImgPath } from '@/utils/imagePath'
+import Link from 'next/link'
 
 const Hero = () => {
   return (
@@ -16,9 +17,9 @@ const Hero = () => {
                 <h1 className='text-white relative max-w-473'>
                   Take your content beyond borders with profesional subtitles
                 </h1>
-                <button className='bg-white text-base font-normal text-primary py-3 px-12 rounded-lg mb-16 mt-8 transition-all duration-0.4s hover:bg-secondary hover:text-white'>
+                <Link href="/contact" className='bg-white text-base font-normal text-primary py-3 px-12 rounded-lg mb-16 mt-8 transition-all duration-0.4s hover:bg-secondary hover:text-white inline-block text-center'>
                   Contact us
-                </button>
+                </Link>
                 <p className='text-2xl font-normal text-white leading-7 pb-11 max-w-408'>
                   Reach a global audience with accurate and engaging subtitles.
                 </p>
