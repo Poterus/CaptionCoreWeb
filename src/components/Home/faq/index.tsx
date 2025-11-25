@@ -23,7 +23,7 @@ const FaqQuestion = () => {
               <h2 className='text-secondary dark:text-white text-center'>
                 Frequently asked questions
               </h2>
-              <div className='overflow-hidden relative z-10 lg:w-770 w-full m-auto bg-secondary dark:bg-secondary rounded-2xl shadow-light-shadwo dark:shadow-none dark:border dark:border-solid dark:border-dark_border'>
+              <div className='overflow-hidden relative z-10 lg:w-770 w-full m-auto bg-secondary dark:bg-secondary rounded-2xl shadow-light-shadwo dark:shadow-none border border-primary dark:border-dark_border border-solid'>
                 {accordionData.map((item, index) => (
                   <div
                     key={index}
@@ -31,7 +31,7 @@ const FaqQuestion = () => {
                       activeIndex === index ? 'accordion__item--active' : ''
                     }`}>
                     <button
-                      className='accordion__btn flex justify-between items-center w-full text-xl font-bold text-left cursor-pointer p-8 border-none outline-hidden bg-secondary dark:bg-secondary text-white dark:text-white hover:bg-primary dark:hover:bg-primary group'
+                      className='accordion__btn flex justify-between items-center w-full text-xl font-bold text-left cursor-pointer p-8 border-none outline-hidden bg-secondary dark:bg-secondary text-white dark:text-white group'
                       onClick={() => toggleAccordion(index)}>
                       <span className='text-20 font-bold'>{item.title}</span>
                       <span className='rounded-full rotate-0 group-active:rotate-180 transition-width opacity-90'>

@@ -29,7 +29,14 @@ const HeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
     >
       <Link
         href={item.href}
-        className={` py-3 text-base flex font-bold hover:text-LightApricot dark:hover:text-LightApricot dark:hover:text-primary ${!isSpecial && isActive ? 'text-LightApricot dark:text-LightApricot' : ' text-white dark:text-white '} ${!isSpecial && isActive ? 'text-LightApricot! dark:text-LightApricot' : ''} ${isSpecialActive ? 'font-semibold relative after:absolute after:inset-x-0 after:bottom-0 after:h-0.5 after:bg-LightApricot' : ''}` }>
+        className={`py-3 text-base flex font-bold
+          ${isSpecial
+            ? 'hover:text-darkmode dark:hover:text-darkmode'
+            : 'hover:text-LightApricot dark:hover:text-LightApricot dark:hover:text-primary'}
+          ${!isSpecial && isActive ? 'text-LightApricot dark:text-LightApricot' : ' text-white dark:text-white '}
+          ${!isSpecial && isActive ? 'text-LightApricot! dark:text-LightApricot' : ''}
+          ${isSpecialActive ? 'font-semibold relative after:absolute after:inset-x-0 after:bottom-0 after:h-0.5 after:bg-LightApricot' : ''}`.replace(/\s+/g, ' ')}
+      >
         {item.label}
         {item.submenu && (
           <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24">

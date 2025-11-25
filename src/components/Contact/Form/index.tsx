@@ -19,7 +19,7 @@ const ContactForm = () => {
                       <input
                         type='text'
                         id='firstName'
-                        className='bg-white text-darkmode text-base rounded-lg block w-full p-2.5 border border-BorderLine dark:border-dark_border dark:bg-darkmode dark:placeholder:gray-400 dark:text-white focus:outline-0 focus:ring-1 focus:ring-secondary dark:focus:ring-white'
+                        className='bg-secondary dark:bg-secondary text-darkmode text-base rounded-lg block w-full p-2.5 border border-BorderLine dark:border-dark_border dark:placeholder:gray-400 dark:text-white focus:outline-0 focus:ring-1 focus:ring-secondary dark:focus:ring-white'
                         placeholder='Your name'
                         required
                       />
@@ -28,7 +28,7 @@ const ContactForm = () => {
                       <input
                         type='text'
                         id='country'
-                        className='bg-white text-darkmode text-base rounded-lg block w-full p-2.5 border border-BorderLine dark:border-dark_border dark:bg-darkmode dark:placeholder:gray-400 dark:text-white focus:outline-0 focus:ring-1 focus:ring-secondary dark:focus:ring-white'
+                        className='bg-secondary dark:bg-secondary text-darkmode text-base rounded-lg block w-full p-2.5 border border-BorderLine dark:border-dark_border dark:placeholder:gray-400 dark:text-white focus:outline-0 focus:ring-1 focus:ring-secondary dark:focus:ring-white'
                         placeholder='Channel name'
                         required
                       />
@@ -37,7 +37,7 @@ const ContactForm = () => {
                       <input
                         type='text'
                         id='company'
-                        className='bg-white text-darkmode text-base rounded-lg block w-full p-2.5 border border-BorderLine dark:border-dark_border dark:bg-darkmode dark:placeholder:gray-400 dark:text-white focus:outline-0 focus:ring-1 focus:ring-secondary dark:focus:ring-white'
+                        className='bg-secondary dark:bg-secondary text-darkmode text-base rounded-lg block w-full p-2.5 border border-BorderLine dark:border-dark_border dark:placeholder:gray-400 dark:text-white focus:outline-0 focus:ring-1 focus:ring-secondary dark:focus:ring-white'
                         placeholder='youremail@website.com'
                         required
                       />
@@ -46,7 +46,7 @@ const ContactForm = () => {
                       <textarea
                         id='message'
                         rows={4}
-                        className='bg-white block p-2.5 w-full text-base text-darkmode rounded-lg border border-BorderLine dark:border-dark_border dark:bg-darkmode dark:placeholder:gray-400 dark:text-white focus:outline-0 focus:ring-1 focus:ring-secondary dark:focus:ring-white'
+                        className='bg-secondary dark:bg-secondary block p-2.5 w-full text-base text-darkmode rounded-lg border border-BorderLine dark:border-dark_border dark:placeholder:gray-400 dark:text-white focus:outline-0 focus:ring-1 focus:ring-secondary dark:focus:ring-white'
                         placeholder='Write your thoughts here...'></textarea>
                     </div>
                   </div>
