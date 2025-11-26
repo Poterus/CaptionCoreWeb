@@ -1,9 +1,11 @@
-import React from 'react'
+"use client";
+import React, { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { getImgPath } from '@/utils/imagePath'
 
 const ContactForm = () => {
+  const [showSuccess, setShowSuccess] = useState(false);
   return (
     <>
       <section className='dark:bg-darkmode pt-0 md:pb-24 pb-10'>
@@ -13,12 +15,23 @@ const ContactForm = () => {
               <h2 className='max-w-320 sm:text-[40px] sm:leading-[3rem] text-[28px] leading-[2.25rem] font-bold text-secondary dark:text-white mb-9'>
                 Do you want subtitles in your content?
               </h2>
-              <form>
+              {showSuccess && (
+                <div className="mb-6 p-4 rounded-lg bg-green-600 text-white text-center font-semibold transition-all duration-500">
+                Message sent successfully! We will respond shortly.
+                </div>
+              )}
+              <form
+                action="https://formsubmit.co/contact@captioncore.com"
+                method="POST"
+                onSubmit={() => setTimeout(() => setShowSuccess(true), 100)}
+              >
+                <input type="hidden" name="_autoresponse" value="Thank you for contacting CaptionCore! We have received your message and will respond shortly." />
                   <div className='grid md:grid-cols-2 grid-cols-1 gap-4 items-center mb-6'>
                      <div className='md:col-span-2 col-span-1'>
                       <input
                         type='text'
                         id='firstName'
+                        name='name'
                         className='bg-secondary dark:bg-secondary text-darkmode text-base rounded-lg block w-full p-2.5 border border-BorderLine dark:border-dark_border dark:placeholder:gray-400 dark:text-white focus:outline-0 focus:ring-1 focus:ring-secondary dark:focus:ring-white'
                         placeholder='Your name'
                         required
@@ -27,7 +40,8 @@ const ContactForm = () => {
                     <div className='md:col-span-2 col-span-1'>
                       <input
                         type='text'
-                        id='country'
+                        id='channelName'
+                        name='channel'
                         className='bg-secondary dark:bg-secondary text-darkmode text-base rounded-lg block w-full p-2.5 border border-BorderLine dark:border-dark_border dark:placeholder:gray-400 dark:text-white focus:outline-0 focus:ring-1 focus:ring-secondary dark:focus:ring-white'
                         placeholder='Channel name'
                         required
@@ -36,7 +50,8 @@ const ContactForm = () => {
                     <div className='md:col-span-2 col-span-1'>
                       <input
                         type='text'
-                        id='company'
+                        id='email'
+                        name='email'
                         className='bg-secondary dark:bg-secondary text-darkmode text-base rounded-lg block w-full p-2.5 border border-BorderLine dark:border-dark_border dark:placeholder:gray-400 dark:text-white focus:outline-0 focus:ring-1 focus:ring-secondary dark:focus:ring-white'
                         placeholder='youremail@website.com'
                         required
@@ -45,6 +60,7 @@ const ContactForm = () => {
                     <div className='md:col-span-2 col-span-1'>
                       <textarea
                         id='message'
+                        name='message'
                         rows={4}
                         className='bg-secondary dark:bg-secondary block p-2.5 w-full text-base text-darkmode rounded-lg border border-BorderLine dark:border-dark_border dark:placeholder:gray-400 dark:text-white focus:outline-0 focus:ring-1 focus:ring-secondary dark:focus:ring-white'
                         placeholder='Write your thoughts here...'></textarea>

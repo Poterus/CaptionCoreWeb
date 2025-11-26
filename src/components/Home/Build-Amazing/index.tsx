@@ -96,7 +96,7 @@ const BuildAmazing = ({ isSpace }: { isSpace: boolean }) => {
                   key={index}
                   className='group'
                   data-aos='fade-up'
-                  data-aos-delay={`${(index + 1) * 200}`}
+                  data-aos-delay={index < 2 ? '200' : `${(index + 1) * 200}`}
                   data-aos-duration='1000'>
                   <div className='shadow-light_shadwo dark:shadow-darkmd p-8 rounded-14 group-hover:cursor-pointer flex flex-col justify-between h-full'>
                     <i
