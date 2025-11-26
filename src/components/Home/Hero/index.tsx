@@ -10,12 +10,12 @@ const Hero = () => {
           <div className='container py-10 md:py-14'>
             <div className='flex flex-wrap items-start'>
               <div
-                className='pb-3 sm:pb-0 w-full md:w-2/3 relative z-1 flex flex-col items-start md:items-start mx-0 text-left pr-30'
+                className='pb-3 sm:pb-0 w-full md:w-2/3 relative z-1 flex flex-col items-start md:items-start mx-0 text-left px-1 sm:px-4 md:pr-30'
                 data-aos='fade-right'
                 data-aos-delay='200'
                 data-aos-duration='1000'>
-                <h1 className='text-white text-7xl md:text-6xl font-bold leading-tight tracking-tight relative max-w-973'>
-                  Take your content beyond borders with profesional subtitles
+                <h1 className='text-white text-4xl sm:text-5xl md:text-6xl font-bold leading-tight tracking-tight w-full break-words'>
+                  Take your content beyond borders with professional subtitles
 
                 </h1>
                 <Link href="/contact" className='highlight-cta-btn bg-white text-base font-normal text-primary py-3 px-12 rounded-lg mb-16 mt-8 transition-colors duration-700 hover:bg-secondary hover:text-white hover:-translate-y-1 inline-block text-center'>
@@ -43,8 +43,8 @@ const Hero = () => {
                   alt='Contact illustration'
                   width={600}
                   height={600}
-                  className='w-600 max-w-lg h-full rounded-lg shadow-lg object-contain'
-                  style={{ objectPosition: 'right bottom' }}
+                  className='w-full max-w-xs sm:max-w-sm md:max-w-lg h-auto rounded-lg shadow-lg object-contain mx-auto'
+                  style={{ objectPosition: 'center bottom' }}
                   priority
                 />
               </div>
