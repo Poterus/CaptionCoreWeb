@@ -23,18 +23,18 @@
   --color-darkprimary: #732000;
   --color-lightPrimary: #3187f4;
   --color-secondary: #171717;
-  --color-SlateBlue: #939596;
-  --color-AliceBlue: #f3f9fd;
-  --color-LightApricot: #f9c78f;
-  --color-border: #233d55;
-  --color-BorderLine: #ccd7e1;
+  --color-SlateBlue: #CFCFCF;
+  --color-AliceBlue: #1E1E1E;
+  --color-LightApricot: #303030;
+  --color-border: #303030;
+  --color-BorderLine: #303030;
   --color-darkmode: #1E1E1E;
   --color-darklight: #061b2e;
   --color-darktext: #CFCFCF;
   --color-dark_border: #303030;
-  --color-Cream: #eee8a9;
-  --color-LavenderBlue: #dbe7ff;
-  --color-LightSoftBlue: #dbe9f6;
+  --color-Cream: #1E1E1E;
+  --color-LavenderBlue: #CFCFCF;
+  --color-LightSoftBlue: #1E1E1E;
   --color-gray: #acbcca;
 
   /* max-width */
