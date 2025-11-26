@@ -8,8 +8,8 @@ const ContactForm = () => {
     <>
       <section className='dark:bg-darkmode pt-0 md:pb-24 pb-10'>
         <div className='container px-2 sm:px-4'>
-          <div className='grid lg:grid-cols-12 grid-cols-1 md:gap-20 gap-10'>
-            <div data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" className='md:col-span-6 col-span-1'>
+          <div className='flex justify-center'>
+            <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" className='w-full max-w-xl'>
               <h2 className='max-w-320 sm:text-[40px] sm:leading-[3rem] text-[28px] leading-[2.25rem] font-bold text-secondary dark:text-white mb-9'>
                 Do you want subtitles in your content?
               </h2>
@@ -52,22 +52,10 @@ const ContactForm = () => {
                   </div>
                   <button
                     type='submit'
-                    className='bg-primary text-white font-normal rounded-lg text-base w-full px-5 py-2.5 text-center transition-all duration-300 hover:bg-darkprimary focus:outline-none'>
+                    className='bg-primary text-white font-normal rounded-lg text-base w-full px-5 py-2.5 text-center transition-colors transition-transform duration-300 hover:bg-darkprimary hover:-translate-y-1 focus:outline-none'>
                     Get in touch
                   </button>
                 </form>
-            </div>
-            <div data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000" className='sm:col-span-6 col-span-1'>
-              <Image
-                src={getImgPath('/images/contact/contact.png')}
-                alt='Contact'
-                width={526}
-                height={650}
-                quality={100}
-                sizes='(max-width: 768px) 100vw, 526px'
-                className='bg-no-repeat bg-contain rounded-lg w-full h-auto max-w-[526px] mx-auto'
-                style={{ objectFit: 'contain' }}
-              />
             </div>
           </div>
         </div>

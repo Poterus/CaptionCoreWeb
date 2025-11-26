@@ -85,9 +85,9 @@ export const cardData = [
         "We work with a wide range of languages to provide accurate and culturally relevant subtitles. We specialize in subtitles fro English and Spanish, but if you have a specific language in mind, feel free to ask us!",
     },
     {
-      title: "Do you use Machine Translation (MT)?",
+      title: "What are the benefits of subtitling my content?",
       content:
-        "We use human and/or MT. Whichever model is used, all content is post-edited and QC'd by human professional translators. Andovar's view is that MT does not replace translators; rather, it helps them to be more efficient. We work with a state-of-the-art platform with built-in machine translation engines specifically trained for broadcast media content. In addition to automating the translation, our platform has terminology management tools, as well as inbuilt real-time QC checks that ensure reading speeds are respected, as well as flagging character and line limit violations.",
+        "TBA",
     },
     {
       title: "What files do you provide?",

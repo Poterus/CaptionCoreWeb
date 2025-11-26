@@ -5,20 +5,15 @@ import Link from "next/link";
 const ContactInfo = () => {
   return (
     <>
-      <section className="dark:bg-darkmode py-20">
+      <section className="dark:bg-darkmode py-10">
         <div className="container">
-          <div className="flex md:flex-row flex-col items-center justify-center sm:gap-28 gap-8">
-            <div className="flex sm:flex-row flex-col items-center sm:gap-8 gap-4">
+          <div className="flex md:flex-row flex-col items-center justify-center sm:gap-14 gap-4">
+            <div className="flex sm:flex-row flex-col items-center sm:gap-4 gap-2">
               {/* Icono de correo eliminado */}
-              <div className="mx-4 md:mx-20 my-6">
+              <div className="mx-4 md:mx-10 my-3">
                 {/* Título 'Email Us' eliminado para un diseño más limpio */}
-                <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" className="text-SlateBlue font-normal text-xl max-w-4xl pb-10 px-4 md:px-12 dark:text-darktext">
-                  <p className="mb-5">At <span className="font-bold">CaptionCore</span>, we believe every creator deserves to have their voice heard across the world. We provide professional, human translations that capture not just words, but the tone, style, and personality of your content.</p>
-                  <p className="mb-5">As a passionate, creator-focused team, we know how powerful it is to enjoy a video with accurate, natural subtitles. That’s why we’re here, to help you share your message with a global audience in the most authentic way possible.</p>
-                  <p className="mb-5">Whether you’re looking to subtitle YouTube videos, localize a podcast, or adapt your content for international platforms, we’ve got you covered.</p>
-                  <p className="mb-5">Reach out to us through email or via the form above, and let’s talk about how we can bring your content to more people, more languages, and more hearts.</p>
-                  <p className="mb-10">With <span className="font-bold">CaptionCore</span>, you’re not just expanding your reach, you’re building connections.</p>
-                  <div className="grid md:grid-cols-3 grid-cols-1 gap-7 mt-8">
+                <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" className="text-SlateBlue font-normal text-xl max-w-4xl pb-4 px-4 md:px-8 dark:text-darktext">
+                  <div className="grid md:grid-cols-3 grid-cols-1 gap-4 mt-4">
                     {/* Email */}
                     <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" className="flex flex-col items-center bg-secondary dark:bg-secondary rounded-14 p-8 shadow-light_shadwo dark:shadow-darkmd">
                       {/* Icono de email */}

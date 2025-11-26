@@ -16,9 +16,22 @@ const page = () => {
         />
         <section className="dark:bg-darkmode py-20">
           <div className="container">
-            <div className="max-w-3xl mx-auto text-center px-4">
+            <div className="max-w-3xl mx-auto text-left px-4">
                 <h3 data-aos="fade-up" data-aos-delay="150" data-aos-duration="800" className="text-white text-4xl font-semibold mb-4">Our Subtitling Team</h3>
-              <p data-aos="fade-up" data-aos-delay="300" data-aos-duration="800" className="text-base font-normal text-SlateBlue dark:text-darktext">At CaptionCore, we are a team of passionate and experienced translators dedicated to providing high-quality subtitling services in various languages. With a deep understanding of the industry and a commitment to excellence, we strive to exceed our clients' expectations on every project.</p>
+                <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="800" className="text-base font-xl text-SlateBlue dark:text-darktext space-y-2.5">
+                  <p className="mb-2.5">
+                    At <strong>CaptionCore</strong>, we are a passionate and experienced team of translators dedicated to delivering high-quality subtitling services in multiple languages. With a deep understanding of the industry and a strong commitment to excellence, we work to exceed expectations on every project.
+                  </p>
+                  <p className="mb-2.5">
+                    We believe every creator deserves to have their voice heard across the world. Our professional translations capture not only the words but also the tone, style and personality of your content. We know how powerful it is to enjoy a video with accurate and natural subtitles, and we are here to make that possible.
+                  </p>
+                  <p className="mb-2.5">
+                    Whether you want to subtitle YouTube videos, localize a podcast or adapt your content for international platforms, <strong>CaptionCore</strong> has you covered. Reach out via email or through the form above, and let’s explore how we can bring your content to more people and more languages.
+                  </p>
+                  <p className="mb-2.5">
+                    With <strong>CaptionCore</strong>, you’re not just expanding your reach, you’re building meaningful connections.
+                  </p>
+                </div>
             </div>
           </div>
         </section>

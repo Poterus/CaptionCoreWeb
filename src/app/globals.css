@@ -1,3 +1,9 @@
+/* Highlight CTA Button Animation */
+/* Highlight CTA Button Animation */
+.highlight-cta-btn {
+  transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+/* Elimina la animación anterior */
 @import 'tailwindcss';
 
 @custom-variant dark (&:where(.dark, .dark *));
@@ -13,7 +19,7 @@
 */
 
 @theme {
-  --color-primary: #AB5903;
+  --color-primary: #d16c02;
   --color-darkprimary: #732000;
   --color-lightPrimary: #3187f4;
   --color-secondary: #171717;
@@ -220,8 +226,7 @@
   @apply lg:inline-block hidden;
 }
 .banner-shap::after {
-  @apply content-[''] absolute left-0 w-full h-[18.75rem] bg-primary -bottom-[5.1875rem];
-  clip-path: ellipse(56% 50%);
+  /* Eliminado: ahora la curva se genera con SVG */
 }
 @media only screen and (max-width: 768px) {
   .banner-shap::after {

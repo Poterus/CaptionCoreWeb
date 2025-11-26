@@ -16,8 +16,8 @@ const page = () => {
   return (
     <>
       <HeroSub
-        title="Contact Us"
-        description=""
+        title="Contact"
+        description="Reach out to us however it works best for you."
 
       />
       <ContactInfo />

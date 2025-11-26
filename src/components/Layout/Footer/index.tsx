@@ -20,21 +20,13 @@ const Footer: FC = () => {
 
   return (
     <footer
-      className={`relative dark:bg-darkmode bg-cover bg-no-repeat bg-center w-full h-full pt-32`}
-      style={{ backgroundImage: `url(${bgImagePath})`, backgroundPosition: 'center top' }}
+      className={`relative dark:bg-darkmode bg-cover bg-no-repeat bg-center w-full h-full pt-8`}
+      style={{ backgroundImage: `url(${bgImagePath})`, backgroundPosition: 'center 40px' }}
     >
       <div className="bg-secondary md:pb-20 pb-8">
         <div className="container">
           <div className="flex items-center justify-between pb-16 border-b border-dark_border border-solid">
             <Link href="/">
-              <Image
-                src={getImgPath("/images/footer/ftr-logo.svg")}
-                alt="Company logo"
-                width={160}
-                height={50}
-                style={{ width: "auto", height: "auto" }}
-                quality={100}
-              />
             </Link>
             <div>
               <ul className="flex items-center gap-5">

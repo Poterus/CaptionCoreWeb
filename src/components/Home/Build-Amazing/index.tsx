@@ -14,7 +14,7 @@ const BuildAmazing = ({ isSpace }: { isSpace: boolean }) => {
               data-aos='fade-right'
               data-aos-delay='200'
               data-aos-duration='1000'>
-              <h2 className='text-secondary dark:text-white max-w-420 pb-8'>
+              <h2 className='text-secondary text-5xl dark:text-white leading-14 max-w-620 pb-8'>
                 Make your content multilingual.
               </h2>
               <p className='text-base font-normal text-white dark:text-darktext max-w-408'>
@@ -85,7 +85,7 @@ const BuildAmazing = ({ isSpace }: { isSpace: boolean }) => {
                 </div>
               </div>
               <div className='mt-8'>
-                <Link href='/contact' className='btn inline-flex items-center gap-3'>
+                <Link href='/contact' className='btn inline-flex items-center gap-3 transition-colors duration-700 bg-white text-primary hover:bg-darkprimary hover:text-white hover:-translate-y-1 transition-transform'>
                   Get Started
                 </Link>
               </div>
