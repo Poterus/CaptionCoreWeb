@@ -7,9 +7,8 @@ import { usePathname } from 'next/navigation';
 const HeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
   const [submenuOpen, setSubmenuOpen] = useState(false);
   const path = usePathname()
-  const specialLabels = ['Contact', 'Home']
+  const specialLabels = ['Contact', 'Home', 'About Us']
   const isSpecial = specialLabels.includes(item.label)
-  const isAbout = item.label === 'About Us';
   const isActive = path === item.href || path.startsWith(`/${item.label.toLowerCase()}`)
   const isSpecialActive = isSpecial && isActive
   const handleMouseEnter = () => {
@@ -31,14 +30,12 @@ const HeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
       <Link
         href={item.href}
         className={`py-3 text-base flex font-bold
-          ${isAbout
-            ? 'hover:text-black dark:hover:text-darkmode'
-            : isSpecial
-              ? 'hover:text-darkmode dark:hover:text-darkmode'
-              : 'hover:text-LightApricot dark:hover:text-LightApricot dark:hover:text-primary'}
+          ${isSpecial
+            ? 'hover:text-darkmode dark:hover:text-darkmode'
+            : 'hover:text-LightApricot dark:hover:text-LightApricot dark:hover:text-primary'}
           ${!isSpecial && isActive ? 'text-LightApricot dark:text-LightApricot' : ' text-white dark:text-white '}
           ${!isSpecial && isActive ? 'text-LightApricot! dark:text-LightApricot' : ''}
-          ${isSpecialActive ? 'font-semibold relative after:absolute after:inset-x-0 after:bottom-0 after:h-0.5 after:bg-LightApricot' : ''}`.replace(/\s+/g, ' ')}
+          ${isSpecialActive ? 'font-semibold relative after:block after:absolute after:inset-x-0 after:bottom-0 after:h-[3px] after:bg-LightApricot' : ''}`.replace(/\s+/g, ' ')}
       >
         {item.label}
         {item.submenu && (

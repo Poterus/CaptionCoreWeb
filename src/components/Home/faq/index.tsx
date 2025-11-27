@@ -65,7 +65,9 @@ const FaqQuestion = () => {
                       </span>
                     </button>
 
-                    <div className='accordion__content font-light max-h-0 opacity-0 overflow-hidden translate-x-4 bg-secondary dark:bg-secondary'>
+                    <div
+                      className={`accordion__content font-light overflow-hidden bg-secondary dark:bg-secondary transition-all duration-500 ease-in-out ${activeIndex === index ? 'max-h-96 opacity-100 translate-x-0' : 'max-h-0 opacity-0 translate-x-4'}`}
+                    >
                       <p className='text-white dark:text-white font-normal text-base px-7 py-4'>
                         {item.content}
                       </p>

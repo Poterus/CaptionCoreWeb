@@ -8,13 +8,13 @@ const Hero = () => {
       <section className="relative overflow-x-clip top-0 bg-primary circalanimat" style={{ '--work-line-bg': `url(${getImgPath('/images/work-grow/work-line.png')})` } as React.CSSProperties}>
         <div className='banner-shap it-wrapper' style={{ position: 'relative' }}>
           <div className='container py-10 md:py-14'>
-            <div className='flex flex-wrap items-start'>
+            <div className='flex flex-wrap md:flex-nowrap items-start'>
               <div
-                className='pb-3 sm:pb-0 w-full md:w-2/3 relative z-1 flex flex-col items-start md:items-start mx-0 text-left px-1 sm:px-4 md:pr-30'
+                className='pb-3 sm:pb-0 w-full md:w-3/5 relative z-1 flex flex-col items-start md:items-start mx-0 text-left px-1 sm:px-4 md:pr-30'
                 data-aos='fade-right'
                 data-aos-delay='200'
                 data-aos-duration='1000'>
-                <h1 className='text-white text-4xl sm:text-5xl md:text-6xl font-bold leading-tight tracking-tight w-full break-words'>
+                <h1 className='text-white text-4xl sm:text-5xl md:text-[55px] font-bold leading-tight tracking-tight w-full break-words'>
                   Take your content beyond borders with professional subtitles
 
                 </h1>
@@ -30,7 +30,7 @@ const Hero = () => {
                 </div>
               </div>
               <div
-                className="w-full md:w-1/3 relative z-1 flex items-center justify-center"
+                className="w-full md:w-2/4 relative z-1 flex items-center justify-center"
                 style={{ 
                   '--grid-line-bg': `url(${getImgPath('/images/hero/grid-line.png')})`,
                   '--circal-bg': `url(${getImgPath('/images/hero/circal.png')})`
@@ -43,7 +43,7 @@ const Hero = () => {
                   alt='Contact illustration'
                   width={600}
                   height={600}
-                  className='w-full max-w-xs sm:max-w-sm md:max-w-lg h-auto rounded-lg shadow-lg object-contain mx-auto'
+                  className='w-full max-w-xs sm:max-w-4xl md:max-w-full xl:max-w-full h-auto rounded-lg shadow-lg object-contain mx-auto'
                   style={{ objectPosition: 'center bottom' }}
                   priority
                 />
